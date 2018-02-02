@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
+
+    <title>Swan's Shop</title>
+
+    <style>
+        body {
+            background-image: url('images/bag.png');
+            background-repeat: round;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .nav {
+            background-color: rgba(156, 209, 220, 0.5);
+            margin: 0;
+        }
+
+        .navbanner {
+            width: 65%;
+            margin-left: 20%;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+
+        .logo {
+            margin-top: 30%;
+            margin-left: 20%;
+        }
+
+        .row.icon {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+
+        .row.Qrcoed {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        .copyright {
+            color: black;
+            text-align: right;
+        }
+
+        .m-nav-banner {
+            display: none;
+            width: 100%;
+        }
+
+        .swiper {
+            height: 400px;
+            background-color: rgba(183, 189, 210, 0.5);
+        }
+
+        .type {
+            position: relative;
+        }
+
+        .type:hover .cover {
+            opacity: 1;
+        }
+
+        .cover {
+            opacity: 0;
+            position: absolute;
+            width: 92%;
+            height: 92%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 100%;
+            background-color: rgba(156, 209, 220, 0.8);
+            text-align: center;
+            transition: .8s;
+            /* flexbox配置居中的版面 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            font-weight: bolder;
+            color: #597CB2;
+            font-family: 'Carter One', cursive;
+            letter-spacing: 5px;
+        }
+
+        .copyright {
+            font-size: 15px;
+            font-family: 'Carter One', cursive;
+            letter-spacing: 10px;
+        }
+
+        @media screen and (max-width:768px) {
+            .logo {
+                margin-top: 0%;
+                margin-left: 0%;
+                height: 50px;
+            }
+            .m-nav-banner {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="row nav">
+            <div class="col-md-3 col-12">
+                <img class="logo" src="images/logo.png" alt="">
+            </div>
+            <div class="col-md-9 d-none d-md-block">
+                <img class="navbanner" src="images/nav-banner.jpg" alt="">
+            </div>
+        </div>
+        <!-- 第一段結尾 -->
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/banner-03.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/banner-01.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/banner-02.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- 第二段結尾 -->
+
+        <!-- 手機板的免運BANNER -->
+        <img src="images/nav-banner.jpg" alt="" class="m-nav-banner">
+
+
+        <div class="icon container">
+            <div class="row icon justify-content-center">
+                <div class="col-md col-4">
+                    <a href="https://www.facebook.com/swanshop.0125" target="_blank">
+                        <div class="type">
+                            <div class="cover">
+                                <span>Women</span>
+                            </div>
+                            <img src="images/ICON-01.png" alt="">
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md col-4">
+                    <a href="https://www.facebook.com/swanshop.0125" target="_blank">
+                        <div class="type">
+                            <div class="cover">
+                                <span> Men</span>
+                            </div>
+                            <img src="images/ICON-02.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="w-100 d-block d-md-none"></div>
+                <div class="col-md col-4">
+                    <a href="https://www.facebook.com/swanshop.0125" target="_blank">
+                        <div class="type">
+                            <div class="cover">
+                                <span>Shoes</span>
+                            </div>
+                            <img src="images/ICON-03.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md col-4">
+                    <a href="https://www.facebook.com/swanshop.0125" target="_blank">
+                        <div class="type">
+                            <div class="cover">
+                                <span>Mackups</span>
+                            </div>
+                            <img src="images/ICON-04.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md col-4">
+                    <a href="https://www.facebook.com/swanshop.0125" target="_blank">
+                        <div class="type">
+                            <div class="cover">
+                                <span>Accessories</span>
+                            </div>
+                            <img src="images/ICON-05.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 第三段結尾 -->
+
+        <!-- Swiper -->
+        <div class="swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img01.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img02.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img03.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img04.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img05.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img06.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img07.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img08.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img09.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img10.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img11.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img12.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img13.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img14.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('images/swiper-img15.jpg')"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- 第四段結尾 -->
+        <div class="Qrcoed container">
+            <div class="row Qrcoed">
+                <div class="col-md col-10">
+                    <img src="images/Qrcoed-01.png" alt="">
+                </div>
+                <div class="col-md col-10">
+                    <img src="images/Qrcoed-02.png" alt="">
+                </div>
+                <div class="col-md col-10">
+                    <img src="images/Qrcoed-03.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 第五段結尾 -->
+        <hr>
+        <hr>
+        <div class="copyright">Created by Shin</div>
+
+
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+    <script>
+        $('.carousel').carousel({
+            interval: 1500
+        })
+    </script>
+</body>
+
+</html>
